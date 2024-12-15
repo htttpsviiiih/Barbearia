@@ -6,3 +6,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
         document.location.href = "home.html";
     }, 5000);
 })
+
+
+
+
+

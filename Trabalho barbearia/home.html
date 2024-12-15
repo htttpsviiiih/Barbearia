@@ -17,22 +17,31 @@
 
 <body>
     <header class="topo">
-        <div class="caixa-img">
-            <img src="imagens/menu.png" alt="">
+        <div id="menuToggle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="#home"><li>Home</li></a>
+                <a href="#login"><li>Login</li></a>
+                <a href="#servicos"><li>Serviços</li></a>
+                <a href="#agendamento"><li>Agendar</li></a>
+                <a href="#galeria"><li>Galeria</li></a>
+                <a href="#area-barbeiros"><li>Barbeiros</li></a>
+                <a href="#historico"><li>historico</li></a>
+            </ul>
         </div>
         <div class="textinho">
-            <p>
-                Cut & Shaved Barber shop
-            </p>
-        </div>
-        <div class="caixa-img">
-            <img src="imagens/config.png" alt="">
+            <p>Cut & Shaved Barber shop</p>
         </div>
     </header>
     <section class="container">
 
         <div id="login" class="login">
-            <p>Login</p>
+            <div class="texto">
+                <p>Login</p>
+            </div>
             <div class="grupo">
                 <input type="text" placeholder="informe seu nome">
             </div>
@@ -52,9 +61,6 @@
             <div class="botao">
                 <input type="submit" value="enviar">
             </div>
-
-        </div>
-        <div class="menu">
 
         </div>
         <div id="servicos" class="servicos">
@@ -98,7 +104,7 @@
                 </div>
                 <div class="opcoes">
                     <input class="checkbox" type="checkbox" name="CortarCabelo">
-                    <label for="CortarCabelo">Corde de cabelo(completo)</label>
+                    <label for="CortarCabelo">Corte de cabelo(completo)</label>
                 </div>
                 <div class="opcoes">
                     <input class="checkbox" type="checkbox" name="Fazer Barba">
@@ -117,7 +123,7 @@
 
         </div>
 
-        <div class="galeria">
+        <div id="galeria" class="galeria">
             <div class="caixona">
                 <div class="texto">
                     <p>Conheça nosso trabalho!</p>
@@ -160,10 +166,25 @@
             </div>
         </div>
 
-        
-        
-    </section>
-
+        <div id="area-barbeiros" class="area-barbeiros">
+            <div class="barbeiros">
+                <div class="texto">
+                    <p>Conheça os barbeiros do nosso time!</p>
+                </div>
+                <div class="botao">
+                    <a href="barbeiros.html" class="botao-link">Clique aqui</a>
+                </div>                
+            </div>
+        </div>
+        <div id="historico" class="historico">
+            <div class="texto">
+                <p>HISTÓRICO DE SERVIÇOS REALIZADOS</p>
+            </div>
+            
+        </div>
+        <div class="botao">
+            <a href="Servicos.html" class="botao-link">Consultar</a>
+        </div>
 </body>
 
 </html>
